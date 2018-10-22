@@ -1,13 +1,15 @@
 import React from "react";
-import "./App.css";
-import Nav from "./Nav";
-import Main from "./Main";
+import Nav from "./components/Nav";
+import Main from "./components/Main";
+import { BrowserRouter } from "react-router-dom";
 
 const App = () => (
-  <div>
-    <Nav />
-    <Main />
-  </div>
+  <BrowserRouter>
+    <div>
+      <Nav />
+      <Main />
+    </div>
+  </BrowserRouter>
 );
 
 export default App;
